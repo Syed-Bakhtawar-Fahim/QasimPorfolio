@@ -10,10 +10,13 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Portfolio from './components/projects/Portfolio';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <>
+      <ToastContainer />
       <Header/>
       <main className='main'>
         <Home />

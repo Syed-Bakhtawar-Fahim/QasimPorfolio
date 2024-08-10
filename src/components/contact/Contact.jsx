@@ -3,6 +3,7 @@ import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi"
 import emailjs from '@emailjs/browser';
 import { IoIosContact } from "react-icons/io";
+import { toast } from 'react-toastify';
 
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
     
         emailjs.sendForm('service_s53x8mc', 'template_hmge7yh', form.current, 'cXginQ40keRVEt1YV')
         e.target.reset();
+        toast.success("Thankyou! I'll get back to you soon.")
     };
   
     return (
